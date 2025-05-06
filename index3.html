@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGF - Pangan Masa Depan</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Style */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigasi Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #004c00;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            position: relative;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Konten */
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: #004c00;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        /* Gambar dengan Keterangan */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .image-grid .caption {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #004c00;
+        }
+
+        /* Sertifikasi Section */
+        .certification {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .certification h2 {
+            color: #004c00;
+            margin-bottom: 20px;
+        }
+
+        .certification img {
+            margin: 10px;
+            width: 80px;
+            height: auto;
+        }
+
+        /* Footer */
+        .footer {
+            background: #004c00;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi Bar -->
+    <nav class="navbar">
+        <div class="logo">GGF</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">Hubungi Kami</a></li>
+        <li><a href="index3.html">Bisnis</a></li>
+        <li><a href="index4.html">publikasi</a></li>
+        <li><a href="index5.html">Kehadiran Global</a></li>
+        <li><a href="index6.html">Produk</a></li>
+        <li><a href="index13.html">Profil</a></li>
+        <li><a href="index15.html">Toko</a></li>
+            
+
+
+      </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="gambarr/th.jpeg" alt="Pangan Masa Depan">
+        <h1>Menyediakan Pangan Terbaik untuk Dunia</h1>
+    </section>
+
+    <!-- Konten -->
+    <section class="content">
+        <h2>Pangan untuk Masa Depan yang Lebih Baik</h2>
+        <p>Di Great Giant Foods, kami memiliki visi untuk menyehatkan kehidupan dengan menyediakan makanan berkualitas yang diproduksi secara berkelanjutan dan inovatif.</p>
+        <p>Mayoritas produk pertanian kami diproduksi di 34.000 hektar lahan yang tersebar di Indonesia, dengan kontrol kualitas ketat untuk memenuhi kebutuhan pelanggan global.</p>
+    </section>
+
+    <!-- Gambar dan Keterangan -->
+    <section class="image-grid">
+        <div>
+            <img src="gambarr/buahbuahan.png" alt="Buah Segar">
+            <p class="caption">Buah Segar Nusantara (SSN)</p>
+        </div>
+        <div>
+            <img src="gambarr/sewu segar.png" alt="Minuman Segar">
+            <p class="caption">Segar Prima Perkasa (SPP)</p>
+        </div>
+        <div>
+            <img src="gambarr/umasjaya.png" alt="Umbi">
+            <p class="caption">Umas Jaya Agrotama (UJA)</p>
+        </div>
+        <div>
+            <img src="gambarr/enzim.png" alt="Produksi Lainnya">
+            <p class="caption">Great Bio Enzyme (GBE)</p>
+        </div>
+    </section>
+
+    <!-- Sertifikasi -->
+    <section class="certification">
+        <h2>Sertifikasi</h2>
+        <img src="gambarr/Screenshot_11.png" alt="Sertifikasi 1">
+        <img src="gambarr/Screenshot_12.png" alt="Sertifikasi 2">
+        <img src="gambarr/Screenshot_13.png" alt="Sertifikasi 3">
+        <img src="gambarr/Screenshot_14.png" alt="Sertifikasi 4">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Great Giant Foods Indonesia</p>
+    </footer>
+</body>
+</html>

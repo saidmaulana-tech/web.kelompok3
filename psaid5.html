@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sertifikat Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f1c1f;
+      color: white;
+    }
+
+    header {
+      background-color: #063247;
+      padding: 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .certificate {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      width: 300px;
+      color: black;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .certificate img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="psaid.html">HOME</a>
+      <a href="psaid2.html">ABOUT</a>
+      <a href="psaid3.html">EXPERIENCE</a>
+      <a href="psaid4.html">SKILL</a>
+      <a href="psaid5.html">CERTIFICATE</a>
+      <a href="psaid6.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="certificate">
+      <img src="gambarr/redhat.png" alt="Red Hat Training" />
+      <p>Red Hat Training: Getting Started with Linux Fundamentals (RH104 - RHEL) - Ver. 8.1</p>
+    </div>
+    <div class="certificate">
+      <img src="gambarr/agunna.png" alt="Network Fundamentals" />
+      <p>Network Fundamental - Saidi Maulana</p>
+    </div>
+    <div class="certificate">
+      <img src="gambarr/always.png" alt="Dicoding Certificate" />
+      <p>Dicoding Academy - Saidi Maulana</p>
+    </div>
+  </main>
+
+</body>
+</html>

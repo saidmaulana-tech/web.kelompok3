@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Prima</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #0f1d1f;
+      color: white;
+    }
+
+    header {
+      background-color: #08344d;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: red;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      position: absolute;
+      right: 40px;
+      top: 25px;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 40px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-section img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .about-text h1 {
+      font-size: 38px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .white {
+      color: white;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .about-text p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #08344d;
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        width: 200px;
+        padding: 20px;
+        z-index: 99;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-section img {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="paga1.html">HOME</a></li>
+        <li><a href="paga2.html">ABOUT</a></li>
+        <li><a href="paga3.html">EXPERIENCE</a></li>
+        <li><a href="paga4.html">SKILL</a></li>
+        <li><a href="paga5.html">CERTIFICATE</a></li>
+        <li><a href="paga6.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about-section">
+    <img src="gambarr/aga (2).jpg" alt="Foto Prima">
+    <div class="about-text">
+      <h1><span class="white">I'am</span> <span class="red">Prima</span></h1>
+      <p>
+        Pelajar SMK dengan jurusan Teknik Komputer Jaringan yang memiliki pengalaman dalam instalasi, konfigurasi, dan pemeliharaan jaringan komputer. Terampil dalam pemecahan masalah jaringan, konfigurasi router serta sistem operasi Windows dan Linux. Mampu beradaptasi dengan cepat terhadap teknologi baru.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

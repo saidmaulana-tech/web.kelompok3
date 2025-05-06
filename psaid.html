@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Said Maulana</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0b1d22;
+      color: white;
+    }
+
+    header {
+      background-color: #073b4c;
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav ul li a:hover {
+      color: #f94144;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Geser ke kiri */
+      padding: 5rem 4rem;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+    }
+
+    .intro-text {
+      max-width: 700px;
+      margin-left: 2rem; /* Jarak antara gambar dan teks */
+    }
+
+    .intro-text h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .intro-text h1 {
+      font-size: 3.2rem;
+      font-weight: bold;
+      line-height: 1.2;
+      font-family: 'Inknut Antiqua', serif;
+    }
+
+    .highlight {
+      color: #f94144;
+    }
+
+    .intro-text p {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: #ccc;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .intro-text {
+        margin-left: 0;
+      }
+
+      .profile-img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <nav>
+      <ul>
+        <li><a href="psaid.html">HOME</a></li>
+        <li><a href="psaid2.html">ABOUT</a></li>
+        <li><a href="psaid3.html">EXPERIENCE</a></li>
+        <li><a href="psaid4.html">SKILL</a></li>
+        <li><a href="psaid5.html">CERTIFICATE</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container">
+    <img src="gambarr/fotoku.jpg" alt="Said Maulana" class="profile-img" />
+    <div class="intro-text">
+      <h2>Hi There</h2>
+      <h1>I’m <span class="highlight">Said Maulana</span></h1>
+      <p>I’m a Web Developer</p>
+    </div>
+  </section>
+</body>
+</html>

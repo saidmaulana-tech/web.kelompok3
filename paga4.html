@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengalaman Sosial</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f1f21;
+      color: white;
+    }
+
+    header {
+      background-color: #063146;
+      padding: 20px 40px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      background-color: white;
+      padding: 10px;
+      flex-shrink: 0;
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .text-content {
+      max-width: 500px;
+      font-size: 22px;
+    }
+
+    .text-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .text-content li {
+      margin-bottom: 15px;
+    }
+
+    .text-content a {
+      color: white;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-color: #2ea3f2;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="paga1.html">HOME</a>
+      <a href="paga2.html">ABOUT</a>
+      <a href="paga3.html">EXPERIENCE</a>
+      <a href="paga4.html">SKILL</a>
+      <a href="paga5.html">CERTIFICATE</a>
+      <a href="paga6.html">CONTAC</a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div class="profile-img">
+      <img src="gambarr/aga (2).jpg" alt="Foto Profil">
+    </div>
+    <div class="text-content">
+      <ul>
+        <li><a href="#">Berpartisipasi Berbagai Lomba Tingkat Sekolah</a></li>
+        <li><a href="#">Mengikuti Berbagai Acara Lingkungan Masyarakat</a></li>
+        <li><a href="#">Menjadi Salah Satu Pengurus TPQ Desa</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

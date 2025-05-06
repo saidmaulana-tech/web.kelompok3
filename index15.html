@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produk GGF</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #4CAF50;
+      padding: 15px 20px;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .navbar-logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .navbar-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .navbar-menu {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+    }
+
+    .navbar-menu li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+
+    .navbar-menu li a:hover {
+      background-color: #388e3c;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-toggle {
+        display: block;
+      }
+
+      .navbar-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #4CAF50;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+      }
+
+      .navbar-menu.active {
+        display: flex;
+      }
+
+      .navbar-menu li {
+        text-align: center;
+        padding: 10px 0;
+      }
+    }
+
+    h1 {
+      margin: 30px 0 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .product {
+      background-color: #eee;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .product .price {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .product button:hover {
+      background-color: #388e3c;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .product button {
+        width: 100%;
+      }
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 90%;
+      text-align: left;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+    }
+
+    .modal-content input[type="number"],
+    .modal-content input[type="text"],
+    .modal-content select {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+    }
+
+    .modal-content label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .btn-submit {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 6px;
+      width: 100%;
+    }
+
+    .btn-submit:hover {
+      background-color: #388e3c;
+    }
+
+    /* Notifikasi Pembayaran */
+    .notifikasi {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background-color: #d4edda;
+      color: #155724;
+      border-left: 8px solid #28a745;
+      padding: 15px;
+      margin: 20px auto;
+      border-radius: 6px;
+      max-width: 400px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .notifikasi .ikon {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-logo">GGF</div>
+    <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+    <ul class="navbar-menu" id="menu">
+      <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">Hubungi Kami</a></li>
+        <li><a href="index3.html">Bisnis</a></li>
+        <li><a href="index4.html">publikasi</a></li>
+        <li><a href="index5.html">Kehadiran Global</a></li>
+        <li><a href="index6.html">Produk</a></li>
+        <li><a href="index13.html">Profil</a></li>
+        <li><a href="index15.html">Toko</a></li>
+    </ul>
+  </nav>
+
+  <h1>Produk GGF</h1>
+
+  <div class="container">
+    <div class="product">
+      <img src="gambarr/nanas.jpeg" alt="Nanas">
+      <div class="price">Rp 15.000,00 / kg</div>
+      <button onclick="bukaModal()">BELI</button>
+    </div>
+    <div class="product">
+      <img src="gambarr/buahnaga.jpeg" alt="Buah Naga">
+      <div class="price">Rp 25.000,00 / kg</div>
+      <button onclick="bukaModal()">BELI</button>
+    </div>
+    <div class="product">
+      <img src="gambarr/pisang.jpeg" alt="Pisang">
+      <div class="price">Rp 25.000,00 / kg</div>
+      <button onclick="bukaModal()">BELI</button>
+    </div>
+    <div class="product">
+      <img src="gambarr/susu.jpeg" alt="Susu">
+      <div class="price">Rp 20.000,00 / liter</div>
+      <button onclick="bukaModal()">BELI</button>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modalPembelian">
+    <div class="modal-content">
+      <span class="close-btn" onclick="tutupModal()">&times;</span>
+      <h2>Form Pembelian</h2>
+
+      <label><input type="checkbox" name="produk" value="Nanas"> Nanas (kg):</label>
+      <input type="number" min="1" placeholder="Jumlah" id="jumlahNanas">
+
+      <label><input type="checkbox" name="produk" value="Buah Naga"> Buah Naga (kg):</label>
+      <input type="number" min="1" placeholder="Jumlah" id="jumlahBuahNaga">
+
+      <label><input type="checkbox" name="produk" value="Pisang"> Pisang (kg):</label>
+      <input type="number" min="1" placeholder="Jumlah" id="jumlahPisang">
+
+      <label><input type="checkbox" name="produk" value="Susu"> Susu (liter):</label>
+      <input type="number" min="1" placeholder="Jumlah" id="jumlahSusu">
+
+      <h3>Alamat Pengiriman</h3>
+      <input type="text" placeholder="Nama Lengkap">
+      <input type="text" placeholder="Nomor Telepon">
+      <input type="text" placeholder="Provinsi, Kota, Kecamatan, Desa">
+      <input type="text" placeholder="Nama Jalan, Gedung, Rumah">
+
+      <h3>Metode Pembayaran</h3>
+      <select>
+        <option value="COD">COD</option>
+        <option value="OVO">OVO</option>
+        <option value="Transfer Bank">Transfer Bank</option>
+        <option value="BCA">BCA</option>
+        <option value="BRI">BRI</option>
+      </select>
+
+      <br><br>
+      <button class="btn-submit">Buat Pesanan</button>
+    </div>
+  </div>
+
+  <!-- Notifikasi -->
+  <div class="notifikasi" id="notifikasiPembayaran">
+    <span class="ikon">⚠</span>
+    <span>Menunggu Pembayaran</span>
+  </div>
+
+  <script src="indexx15.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #A38C7B; /* Background utama */
+            color: #fff;
+        }
+
+        header {
+            background-color: #8C7764;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Tombol Navigasi */
+        header .navbar a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 8px; /* Mengurangi margin antar tombol */
+            font-size: 12px; /* Mengurangi ukuran font tombol */
+            padding: 5px 10px; /* Mengurangi padding tombol */
+            transition: color 0.3s;
+        }
+
+        header .navbar a:hover {
+            color: #FFD700;
+        }
+
+        header .navbar {
+            display: flex;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        /* Sidebar Section */
+        .sidebar {
+            background-color: #2F3B46;
+            width: 35%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #FFD700;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .sidebar ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Content Section */
+        .content {
+            background-color: #403A3A;
+            width: 65%;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .content h2 {
+            text-align: center;
+            background-color: #5E5E5E;
+            padding: 10px;
+            border-radius: 5px;
+            color: #FFD700;
+            font-size: 18px;
+        }
+
+        .content section {
+            margin: 20px 0;
+        }
+
+        .content section h3 {
+            background-color: #5E5E5E;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #FFD700;
+        }
+
+        .content section ul {
+            list-style: none;
+            padding: 10px 20px;
+        }
+
+        .content section ul li {
+            margin: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar, .content {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="title">
+            <h1>Profil</h1>
+        </div>
+        <nav class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Hubungi Kami</a></li>
+            <li><a href="index3.html">Bisnis</a></li>
+            <li><a href="index4.html">publikasi</a></li>
+            <li><a href="index5.html">Kehadiran Global</a></li>
+            <li><a href="index6.html">Produk</a></li>
+            <li><a href="index13.html">Profil</a></li>
+            <li><a href="index15.html">Toko</a></li>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="gambarr/EKA (2).jpg" alt="Profile Picture">
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="#">Instagram: rhmekak12</a></li>
+                <li><a href="#">WhatsApp: +62-88235798165</a></li>
+                <li><a href="#">TikTok: ekaw256</a></li>
+            </ul>
+            <h3>Language</h3>
+            <ul>
+                <li>Beautiful Things</li>
+                <li>The Door</li>
+                <li>Love Again</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <section>
+                <h2>DATA DIRI</h2>
+                <p>
+                    Nama: Rahma Eka Susanti <br>
+                    Agama: Islam <br>
+                    Kelamin: Perempuan <br>
+                    Umur: 16 Tahun <br>
+                    Alamat: Ds. Gadungan, RT 04 RW 01, Kec. Gandusari, Kab. Blitar
+                </p>
+            </section>
+            <section>
+                <h3>HOBI</h3>
+                <ul>
+                    <li>Membaca Buku</li>
+                    <li>Olahraga</li>
+                    <li>Traveling</li>
+                </ul>
+            </section>
+            <section>
+                <h3>PENDIDIKAN</h3>
+                <ul>
+                    <li>2011-2013: TK Darma Wanita</li>
+                    <li>2013-2019: SDN Gadungan 05</li>
+                    <li>2019-2022: SMPN 02 Gandusari</li>
+                    <li>2022-2025: SMKN 01 Nglegok</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

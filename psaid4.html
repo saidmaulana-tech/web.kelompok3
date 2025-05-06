@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Said</title>
+  <!-- Import font Inknut Antiqua dari Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #10191c;
+      color: white;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #083c5a;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff5e00;
+    }
+
+    /* Hero Section */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 60px 50px;
+      flex-wrap: wrap;
+      min-height: 80vh;
+    }
+
+    .profile-image {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 3cm;
+    }
+
+    .text {
+      max-width: 600px;
+    }
+
+    .text h1 {
+      font-family: 'Inknut Antiqua', serif;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .text h1 span {
+      color: #ff5e00;
+    }
+
+    .text p {
+      font-size: 22px;
+      line-height: 1.7;
+    }
+
+    .jarak-baris {
+      display: inline-block;
+      margin-top: cm;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="psaid.html">HOME</a>
+    <a href="psaid2.html">ABOUT</a>
+    <a href="psaid3.html">EXPERIENCE</a>
+    <a href="psaid4.html">SKILL</a>
+    <a href="psaid5.html">CERTIFICATE</a>
+    <a href="psaid6.html">CONTACT</a>
+  </nav>
+
+  <div class="container">
+    <img src="gambarr/fotoku.jpg" alt="Foto Said" class="profile-image">
+    <div class="text">
+      <h1><span>skill</span></h1>
+      <p>
+        - Desain Website di Figma<br>
+        - Coding menggunakan Visual Studio Code<br>
+        - Membuat Website Statik<br>
+        <span class="jarak-baris">- Praktek splicing</span>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

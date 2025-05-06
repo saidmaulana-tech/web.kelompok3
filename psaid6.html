@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak Said</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #10191c;
+      color: white;
+    }
+
+    header {
+      background-color: #083c5a;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: flex-end; /* posisi ke kanan */
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px; /* diperkecil dari 18px */
+    }
+
+    nav a:hover {
+      color: #ff5e00;
+    }
+
+    .container {
+      display: flex;
+      align-items: flex-start;
+      padding: 180px 80px 60px;
+      gap: 100px;
+    }
+
+    .profile-image {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .contact-info {
+      font-size: 22px;
+      margin-top: 40px;
+    }
+
+    .contact-info ul {
+      list-style: disc;
+      padding-left: 25px;
+      margin: 0;
+    }
+
+    .contact-info li {
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        justify-content: center;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 120px 20px 40px;
+      }
+
+      .contact-info {
+        margin-top: 30px;
+      }
+
+      .contact-info ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .contact-info li {
+        margin-bottom: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+        <a href="psaid.html">HOME</a>
+        <a href="psaid2.html">ABOUT</a>
+        <a href="psaid3.html">EXPERIENCE</a>
+        <a href="psaid4.html">SKILL</a>
+        <a href="psaid5.html">CERTIFICATE</a>
+        <a href="psaid6.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <img src="gambarr/fotoku.jpg" alt="Foto Said" class="profile-image" />
+    <div class="contact-info">
+      <ul>
+        <li>Email: saidmaulana360@gmail.com</li>
+        <li>Phone: +62 881-0269-09164</li>
+        <li>LinkedIn: saidmaulana360@gmail.com</li>
+        <li>Instagram: said.mau_19</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil</title>
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6e6e6; /* Warna background */
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Navigasi */
+    .navbar {
+      width: 100%;
+      background-color: #b49a83; /* Warna cokelat */
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Kontainer utama */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 900px;
+      background-color: #fff; /* Background putih */
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .left-section {
+      background-color: #000; /* Warna hitam */
+      color: #fff;
+      flex: 1;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .info p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .right-section {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .contact p,
+    .education p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .contact img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigasi -->
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">Hubungi Kami</a></li>
+        <li><a href="index3.html">Bisnis</a></li>
+        <li><a href="index4.html">publikasi</a></li>
+        <li><a href="index5.html">Kehadiran Global</a></li>
+        <li><a href="index6.html">Produk</a></li>
+        <li><a href="index13.html">Profil</a></li>
+        <li><a href="index15.html">Toko</a></li>
+    </ul>
+  </div>
+
+  <!-- Konten Utama -->
+  <div class="container">
+    <!-- Bagian Kiri -->
+    <div class="left-section">
+      <div class="profile-pic">
+        <img src="gambarr/sapta.jpg" alt="Profile Picture">
+      </div>
+      <div class="info">
+        <p><strong>Nama:</strong> Sapta Mai Perkasa</p>
+        <p><strong>Ttg:</strong> Blitar, 19 Mei 2007</p>
+        <p><strong>Alamat:</strong> Jl. Lombok, No.11, Rt 002/Rw 006, Tawangsari Garum Kab. Blitar</p>
+        <p><strong>Status:</strong> Pelajar SMKN 1 Nglegok, Jurusan TKJ</p>
+        <p><strong>Hobi:</strong> membaca Komik</p>
+        <p><strong>Agama:</strong> Islam</p>
+        <p><strong>Gender:</strong> Laki-laki</p>
+        <p><strong>Prestasi:</strong> -</p>
+        <p><strong>Sertifikat:</strong> MTCNA, Linux Debian Aguna course</p>
+        <p><strong>Keahlian:</strong> bela diri, olahraga, memasak</p>
+      </div>
+    </div>
+    <!-- Bagian Kanan -->
+    <div class="right-section">
+      <div class="contact">
+        <p><strong>Kontak:</strong></p>
+        <p><img src="gambar/wa.jpg" alt="WhatsApp"> 0812 2913 0421</p>
+        <p><img src="gambar/ig.jpg" alt="Instagram"> @Sam_Diro80</p>
+        <p><img src="gambar/imel.png" alt="Email"> sapramaip123@gmail.com</p>
+      </div>
+      <div class="education">
+        <p><strong>Latar Belakang Sekolah:</strong></p>
+        <p>TK: TK Alhidayah Garum (2012-2014)</p>
+        <p>SD: SDI Ma'arif Tawangsari Garum (2014-2020)</p>
+        <p>SMP: MTsN 2 Kota Blitar (2020-2023)</p>
+        <p>SMK: SMKN 1 Nglegok (2023-2025)</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

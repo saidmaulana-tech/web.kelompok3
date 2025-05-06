@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Great Giant Foods</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: linear-gradient(90deg, #4CAF50, #388E3C);
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+    }
+
+    .nav-links li a {
+      color: white;
+      padding: 8px 12px;
+      transition: background 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: url('https://via.placeholder.com') no-repeat center/cover;
+
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    /* About section */
+    .about {
+      padding: 50px 20px;
+      text-align: center;
+      background: #f4f4f4;
+    }
+
+    .about h2 {
+      font-size: 2em;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Publications section */
+    .publications {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .publications h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card h3 {
+      margin: 15px;
+      font-size: 1.2em;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #4CAF50;
+      color: white;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #4CAF50;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">GGF</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">Hubungi Kami</a></li>
+        <li><a href="index3.html">Bisnis</a></li>
+        <li><a href="index4.html">publikasi</a></li>
+        <li><a href="index5.html">Kehadiran Global</a></li>
+        <li><a href="index6.html">Produk</a></li>
+        <li><a href="index13.html">Profil</a></li>
+        <li><a href="index15.html">Toko</a></li>
+
+
+      </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="gambarr/nanas.jpg" width="1200" height="700" alt="great giant foods">
+</section>
+
+  <section id="home" class="hero">
+    <h1>Great Giant Foods</h1>
+    <p>Making food great.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Great Giant Foods is committed to sustainability and excellence in food production.</p>
+  </section>
+
+  <section id="publications" class="publications">
+    <h2>Publications</h2>
+    <div class="grid-container">
+      <div class="card">
+        <img src="gambarr/Screenshot_4.png" alt="GGF Probi">
+        <h3>Profil Perusahaan</h3>
+      </div>
+      <div class="card">
+        <img src="gambarr/Screenshot_5.png" alt="GGF CSR">
+        <h3>CSR Report 2022</h3>
+      </div>
+      <div class="card">
+        <img src="gambarr/Screenshot_6.png" alt="GGF PT">
+        <h3>PT Great Giant Pineapple</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Great Giant Foods. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

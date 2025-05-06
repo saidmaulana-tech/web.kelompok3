@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Said Maulana</title>
+    <style>
+        /* Reset CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #003026;
+            color: white;
+        }
+
+        /* Navigasi */
+        .navbar {
+            background-color: #2e4c2e;
+            padding: 15px 20px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #70d9b4;
+            border-radius: 5px;
+        }
+
+        /* Kontainer */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Bagian Kontak */
+        .contact-section {
+            background-color: #1d1d1d;
+            color: white;
+            width: 30%;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-section .logo-img {
+            width: 120px; /* Ukuran gambar diperbesar */
+            height: 120px; /* Menjaga aspek rasio tetap proporsional */
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .contact-section h3 {
+            background-color: #ffffff;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .contact-list li {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        /* Bagian Informasi */
+        .info-section {
+            background-color: #003026;
+            width: 65%;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .data-diri, .pendidikan {
+            margin-bottom: 20px;
+        }
+
+        .pengalaman {
+            text-align: center; /* Mengatur teks pengalaman ke tengah */
+            margin-top: 30px;
+        }
+
+        .pengalaman h3 {
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            background-color: #003026;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid white;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            line-height: 1.8;
+        }
+
+        ul li {
+            margin-left: 20px;
+        }
+
+        span {
+            color: #70d9b4;
+            font-weight: bold;
+        }
+
+        .pengalaman-content {
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Mengatur semua elemen ke tengah */
+        }
+
+        .pengalaman-content p {
+            margin-bottom: 10px;
+        }
+
+        .pengalaman-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .pengalaman-content ul li {
+            margin: 5px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .pengalaman-content ul li::before {
+            content: "•";
+            color: #70d9b4;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">Hubungi Kami</a></li>
+        <li><a href="index3.html">Bisnis</a></li>
+        <li><a href="index4.html">publikasi</a></li>
+        <li><a href="index5.html">Kehadiran Global</a></li>
+        <li><a href="index6.html">Produk</a></li>
+        <li><a href="index13.html">Profil</a></li>
+        <li><a href="index15.html">Toko</a></li>
+            
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Bagian Kontak -->
+        <div class="contact-section">
+            <div class="logo">
+                <img src="gambarr/idd.jpg" alt="Logo" class="logo-img">
+            </div>
+            <h3>DETAIL CONTACT</h3>
+            <ul class="contact-list">
+                <li><strong>Whatsapp</strong>: 0881-0269-09164</li>
+                <li><strong>Gmail</strong>: saidmaulana360@gmail.com</li>
+                <li><strong>Instagram</strong>: said_22</li>
+            </ul>
+        </div>
+
+        <!-- Bagian Informasi -->
+        <div class="info-section">
+            <!-- Data Diri -->
+            <div class="data-diri">
+                <h3>DATA DIRI</h3>
+                <ul>
+                    <li>Nama: <span>Said Maulana</span></li>
+                    <li>Agama: <span>Islam</span></li>
+                    <li>Kelamin: <span>Laki-laki</span></li>
+                    <li>Umur: <span>17</span></li>
+                    <li>Alamat: <span>Desa Kemloko, RT 01 RW01, Nglegok, Blitar, Jawa Timur</span></li>
+                </ul>
+            </div>
+            <!-- Pendidikan -->
+            <div class="pendidikan">
+                <h3>PENDIDIKAN</h3>
+                <ul>
+                    <li>2011-2013: TK AL HIDAYAH</li>
+                    <li>2013-2019: SDN RESAPOMBO 04</li>
+                    <li>2019-2022: SMPN 1 NGLEGOK</li>
+                    <li>2022-2025: SMKN 1 NGLEGOK</li>
+                </ul>
+            </div>
+            <!-- Pengalaman -->
+            <div class="pengalaman">
+                <h3>PENGALAMAN</h3>
+                <div class="pengalaman-content">
+                    <p>Pernah mengikuti lomba FLS2N musik tradisional:</p>
+                    <ul>
+                        <li>Juara 1 tingkat kabupaten</li>
+                        <li>Mendapatkan peringkat ke-7 tingkat provinsi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

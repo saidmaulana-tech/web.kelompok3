@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Sapta Mai Perkasa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f1e21;
+      color: white;
+    }
+
+    nav {
+      background-color: #062f4f;
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem 2rem;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 4rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text {
+      max-width: 500px;
+    }
+
+    .text h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .text h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .text h1 span {
+      color: #e8491d;
+    }
+
+    .text p {
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+      }
+
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text h1, .text p {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="sapta1.html">HOME</a></li>
+      <li><a href="sapta2.html">ABOUT</a></li>
+      <li><a href="sapta3.html">EXPERIENCE</a></li>
+      <li><a href="sapta4.html">SKILL</a></li>
+      <li><a href="sapta5.html">CERTIFICATE</a></li>
+      <li><a href="sapta6.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="profile-img">
+      <img src="gambarr/sapta.jpg" alt="Sapta Mai Perkasa">
+    </div>
+    <div class="text">
+      <h2>Hi There</h2>
+      <h1>I’am <span>Sapta Mai Perkasa</span></h1>
+      <p>I’am a Web Developer</p>
+    </div>
+  </div>
+
+</body>
+</html>

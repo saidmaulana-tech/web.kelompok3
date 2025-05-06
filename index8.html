@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Diri</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #31474A; /* Warna background sesuai gambar */
+            color: white;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: flex-end; /* Tombol navigasi di kanan */
+            background-color: #25292A; /* Warna navbar */
+            padding: 5px 15px; /* Padding navbar */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 4px; /* Jarak antar tombol lebih kecil */
+            font-size: 12px; /* Ukuran font lebih kecil */
+            text-transform: uppercase;
+            padding: 3px 6px; /* Padding internal tombol lebih kecil */
+            border-radius: 4px; /* Tombol dengan sudut melengkung */
+            transition: background-color 0.3s ease; /* Efek hover */
+        }
+
+        .navbar a:hover {
+            background-color: #46666E; /* Warna hover */
+        }
+
+        /* Card Styles */
+        .card {
+            display: flex;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #46666E; /* Warna kartu utama */
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Left Section */
+        .left {
+            background-color: #3D585F; /* Warna bagian kiri */
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .kontak, .hobi {
+            margin-top: 20px;
+        }
+
+        .kontak h3, .hobi h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .hobi ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .hobi ul li {
+            font-size: 14px;
+        }
+
+        /* Right Section */
+        .right {
+            padding: 20px;
+            width: 70%;
+        }
+
+        .data-diri, .prestasi {
+            margin-bottom: 20px;
+        }
+
+        .data-diri h3, .prestasi h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .data-diri p, .prestasi p {
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+            }
+
+            .left, .right {
+                width: 100%;
+            }
+
+            .navbar a {
+                font-size: 10px; /* Ukuran font lebih kecil di perangkat kecil */
+                margin: 0 3px; /* Jarak antar tombol lebih kecil */
+                padding: 2px 4px; /* Padding internal tombol lebih kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">Hubungi Kami</a></li>
+        <li><a href="index3.html">Bisnis</a></li>
+        <li><a href="index4.html">publikasi</a></li>
+        <li><a href="index5.html">Kehadiran Global</a></li>
+        <li><a href="index6.html">Produk</a></li>
+        <li><a href="index13.html">Profil</a></li>
+        <li><a href="index15.html">Toko</a></li>
+            
+        </nav>
+    </header>
+
+    <main>
+        <div class="card">
+            <div class="left">
+                <img src="gambarr/aga.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="kontak">
+                    <h3>KONTAK</h3>
+                    <p><strong>WhatsApp:</strong> 085736571061</p>
+                    <p><strong>TikTok:</strong> PRIMA48_</p>
+                    <p><strong>Instagram:</strong> Agaprima46</p>
+                </div>
+                <div class="hobi">
+                    <h3>HOBI</h3>
+                    <ul>
+                        <li>Badminton</li>
+                        <li>Mendaki</li>
+                        <li>Berenang</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="data-diri">
+                    <h3>Data Diri</h3>
+                    <p><strong>Nama:</strong> Prima Surya Dilaga</p>
+                    <p><strong>Ttl:</strong> Blitar, 19 Mei 2007</p>
+                    <p><strong>Alamat:</strong> Jl. Lombok, No.11, Rt 002/Rw 006,<br> Tawangsari Garum Kab. Blitar</p>
+                    <p><strong>Status:</strong> Pelajar SMKN 1 Nglegok, Jurusan TKJ</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                    <p><strong>Gender:</strong> Laki-laki</p>
+                </div>
+                <div class="prestasi">
+                    <h3>Prestasi:</h3>
+                    <p>Sertifikat: MTCNA, Linux Debian Aguna course</p>
+                    <p>Keahlian bela diri, olahraga, memasak</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGF - Dari Indonesia Untuk Dunia</title>
+    <style>
+        /* Reset and Basic Styles */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #333;
+        }
+
+        .navbar .logo a {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .navbar nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            text-align: center;
+        }
+
+        .hero-section img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+        }
+
+        /* Content Sections */
+        .global-operations {
+            padding: 2rem;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .locations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .location-card {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .location-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .location-card h3 {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .location-card p {
+            margin: 0.5rem 0;
+        }
+
+        .address {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .hero-text {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">GGF</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">Hubungi Kami</a></li>
+                    <li><a href="index3.html">Bisnis</a></li>
+                    <li><a href="index4.html">publikasi</a></li>
+                    <li><a href="index5.html">Kehadiran Global</a></li>
+                    <li><a href="index6.html">Produk</a></li>
+                    <li><a href="index13.html">Profil</a></li>
+                    <li><a href="index15.html">Toko</a></li>
+            
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero-section">
+            <img src="gambarr/th (1).jpeg" alt="Earth View">
+            <div class="hero-text">
+                <h1>Dari Indonesia Untuk Dunia</h1>
+            </div>
+        </section>
+
+        <section class="global-operations">
+            <h2>Operasional Global</h2>
+            <p>Melalui afiliasi, mitra, dan kantor perwakilan kami di Asia, Eropa, dan AS, GGF mampu menghasilkan produk makanan dan komoditas perkebunan yang sesuai selera kepada para pelanggan di seluruh dunia.</p>
+        </section>
+
+        <section class="locations">
+            <!-- USA Section -->
+            <div class="location-card">
+                <img src="gambarr/amerika.jpg" alt="USA">
+                <h3>Great Giant Foods Amerika Serikat</h3>
+                <p>Great Giant Foods USA Inc merupakan kantor perantara kami di luar negeri...</p>
+                <div class="address">
+                    <p>Alamat: 17150 Newhope St., Suite 750, Irvine CA 92614</p>
+                    <p>+1-949-679-9096 • sales@ggf-foods.com</p>
+                    <p>www.ggf-usa.com</p>
+                </div>
+            </div>
+
+            <!-- Canada Section -->
+            <div class="location-card">
+                <img src="gambarr/canada.jpg" alt="Canada">
+                <h3>Great Giant Foods KANADA</h3>
+                <p>Great Giant Foods Canada memulai operasinya pada tahun 2018 dan mengelola nanas dengan merek premium Ohji.</p>
+                <div class="address">
+                    <p>Alamat: 617 Columbia Street, New Westminster B.C Canada V3M 1A5</p>
+                    <p>sales@ggf-foods.com</p>
+                </div>
+            </div>
+
+            <!-- Japan Section -->
+            <div class="location-card">
+                <img src="gambarr/jepang.jpg" alt="Japan">
+                <h3>Great Giant Foods JEPANG</h3>
+                <p>Great Giant Foods Jepang didirikan sebagai perusahaan agen impor di bawah Sagro Gurun Seiu...</p>
+                <div class="address">
+                    <p>Alamat: Yurakucho Bldg 10F, Chiyoda-ku Tokyo 100-0006</p>
+                    <p>+81-3-6550-8961 • sales@ggf-foods.co.jp</p>
+                </div>
+            </div>
+
+            <!-- Singapore Section -->
+            <div class="location-card">
+                <img src="gambarr/singapur.jpg" alt="Singapore">
+                <h3>Great Giant Foods SINGAPURA</h3>
+                <p>Great Giant Foods Singapura berfungsi sebagai kantor regional kami untuk pasar Singapura...</p>
+                <div class="address">
+                    <p>Alamat: Great Giant Foods Singapore 360 Orchard Road Unit 10-02 Singapore 238869</p>
+                    <p>+65 8121 7890 • sales@ggf-foods.com</p>
+                </div>
+            </div>
+
+            <!-- Korea Section -->
+            <div class="location-card">
+                <img src="gambarr/korea.jpg" alt="Korea">
+                <h3>Great Giant Foods KOREA</h3>
+                <p>Great Giant Foods Korea Selatan didirikan untuk membantu memperluas pasar buah-buahan segar di Korea...</p>
+                <div class="address">
+                    <p>Alamat: 51F WeWork Bld 507 Nonhyeon-ro, Seoul, Korea Selatan</p>
+                    <p>+82-2-6939-6526 • sales@ggf-foods.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

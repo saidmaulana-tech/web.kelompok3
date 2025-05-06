@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Sapta</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f1e21;
+      color: white;
+    }
+
+    nav {
+      background-color: #062f4f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 4rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .text {
+      max-width: 500px;
+    }
+
+    .text h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .text h1 span {
+      color: #e8491d;
+    }
+
+    .text p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+      }
+
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text {
+        max-width: 90%;
+      }
+
+      .text h1,
+      .text p {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="sapta1.html">HOME</a></li>
+      <li><a href="sapta2.html">ABOUT</a></li>
+      <li><a href="sapta3.html">EXPERIENCE</a></li>
+      <li><a href="sapta3.html">SKILL</a></li>
+      <li><a href="sapta5.html">CERTIFICATE</a></li>
+      <li><a href="sapta6.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="profile-img">
+      <img src="gambarr/sapta.jpg" alt="Sapta">
+    </div>
+    <div class="text">
+      <h1>I’am <span>Sapta</span></h1>
+      <p>Pelajar SMK dengan jurusan Teknik Komputer Jaringan yang memiliki pengalaman dalam instalasi, konfigurasi, dan pemeliharaan jaringan komputer. Terampil dalam pemecahan masalah jaringan, konfigurasi router serta sistem operasi Windows dan Linux. Mampu beradaptasi dengan cepat terhadap teknologi baru.</p>
+    </div>
+  </div>
+
+</body>
+</html>

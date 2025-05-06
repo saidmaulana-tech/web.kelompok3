@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sapta Mai Perkasa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #0f1c1c;
+      color: white;
+    }
+
+    .navbar {
+      background-color: #003b60;
+      padding: 15px 20px;
+      border: 1px solid #0080ff;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 100px 40px;
+      gap: 3cm; /* Jarak horizontal antara gambar dan teks = 3 cm */
+    }
+
+    .profile-image img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+    }
+
+    .hero-text p {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      color: white;
+    }
+
+    .highlight {
+      color: #e84118;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="sapta1.html">HOME</a></li>
+        <li><a href="sapta2.html">ABOUT</a></li>
+        <li><a href="sapta3.html">EXPERIENCE</a></li>
+        <li><a href="sapta4.html">SKILL</a></li>
+        <li><a href="sapta5.html">CERTIFICATE</a></li>
+        <li><a href="sapta6.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="profile-image">
+      <img src="gambarr/sapta.jpg" alt="Profile Photo" />
+    </div>
+    <div class="hero-text">
+      <p>Hi There</p>
+      <h1>I’m <span class="highlight">Sapta Mai Perkasa</span></h1>
+      <p>I’m a Web Developer</p>
+    </div>
+  </section>
+
+</body>
+</html>
